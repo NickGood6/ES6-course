@@ -1,0 +1,25 @@
+<head>
+    <title>Arrow functions</title>
+</head>
+<body>
+    <script>
+        const names = ['Nick', 'Nadine', 'Alfie', 'Matilda'];
+
+        const fullNames = names.map((name) => {
+            return `${name} Good`;
+        });
+
+        const fullNamesBarreled = names.map((name) => `${name} Wolfenden-Good` );
+
+        const fullNamesBarreledAgain = names.map((name) => `${name} Wolfenden-Good-Again`);
+
+        console.log(fullNames);
+        console.log(fullNamesBarreled);
+        console.log(fullNamesBarreledAgain);
+
+        const sayMyName = (name) => alert(`Hello ${name}`);
+
+        sayMyName('Nick');
+
+    </script>
+</body>
